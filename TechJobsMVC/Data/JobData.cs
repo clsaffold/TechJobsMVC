@@ -8,15 +8,15 @@ namespace TechJobsMVC.Data
 {
     public class JobData
     {
-        static private string DATA_FILE = "Data/job_data.csv";
+        static readonly string DATA_FILE = "Data/job_data.csv";
 
         static bool IsDataLoaded = false;
 
         static List<Job> AllJobs;
-        static private List<JobField> AllEmployers = new List<JobField>();
-        static private List<JobField> AllLocations = new List<JobField>();
-        static private List<JobField> AllPositionTypes = new List<JobField>();
-        static private List<JobField> AllCoreCompetencies = new List<JobField>();
+        static readonly List<JobField> AllEmployers = new List<JobField>();
+        static readonly List<JobField> AllLocations = new List<JobField>();
+        static readonly List<JobField> AllPositionTypes = new List<JobField>();
+        static readonly List<JobField> AllCoreCompetencies = new List<JobField>();
 
         static public List<Job> FindAll()
         {
