@@ -41,7 +41,7 @@ namespace TechJobsMVC.Models
             }
             if (Location.Value.Equals("") || Location.Value == null)
             {
-                Location.Value= "Data not available";
+                Location.Value = "Data not available";
             }
             if (CoreCompetency.Value.Equals("") || CoreCompetency.Value == null)
             {
@@ -52,12 +52,12 @@ namespace TechJobsMVC.Models
                 PositionType.Value = "Data not available";
             }
 
-            output = string.Format("\nID: %d\n" +
-                    "Name: %s\n" +
-                    "Employer: %s\n" +
-                    "Location: %s\n" +
-                    "Position Type: %s\n" +
-                    "Core Competency: %s\n", Id, Name, Employer, Location, PositionType, CoreCompetency);
+            output = string.Format("\nID: {0}\n" +
+                    "Name: {1}\n" +
+                    "Employer: {2}\n" +
+                    "Location: {3}\n" +
+                    "Position Type: {4}\n" +
+                    "Core Competency: {5}\n", Id, Name, Employer, Location, PositionType, CoreCompetency);
             return output;
         }
 

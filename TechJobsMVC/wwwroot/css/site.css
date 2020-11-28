@@ -29,7 +29,7 @@ a {
 html {
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   html {
     font-size: 16px;
   }
@@ -108,67 +108,76 @@ textarea {
     }
 }
 
-/*.body-content {
-    margin-top: 72px;
+* {
+    box-sizing: border-box;
 }
 
-td, th {
-    padding: 10px;
-}
-
-tr:nth-child(odd) {
-    background-color: #e4e4e4;
-}*/
-
-table.job-listing {
-    margin: 30px auto;
-    border: 1px solid #e4e4e4;
-    width: 10%;
-    table-layout: fixed;
-}
-
-    table.job-listing td:first-child {
-        font-weight: bold;
+    table.job-listing {
+        margin: 30px auto;
+        border: 1px solid #e4e4e4;
+        width: 300px;
+        /*table-layout: fixed;*/
     }
 
-    table.job-listing td:last-child {
-        width: 100px;
+        table.job-listing td:first-child {
+            font-weight: bold;
+        }
+
+        table.job-listing td:last-child {
+            width: 17%;
+        }
+
+    label {
+        margin-right: 15px;
     }
 
-label {
-    margin-right: 15px;
-}
-.body-content {
-    margin-top: 72px;
-}
+    .body-content {
+        margin-top: 72px;
+    }
 
-td, th {
+    td, th {
     padding: 10px;
 }
 
 th {
-    text-align: center;
-    page-break-after: always;
-    width: 10%
+    text-align: left;
+    width: 17%
 }
 
 td {
     vertical-align: top;
-    word-wrap: break-word;
-    page-break-after: always;
-    width: 10%
+    width: 17%
 }
 
-tr:nth-child(odd) {
-    background-color: #e4e4e4;
-}
+    tr:nth-child(odd) {
+        background-color: #e4e4e4;
+        width: 17%
+    }
 
-.centeredTable {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .centeredTable {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-/*table.job-listing {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*table.job-listing {
     margin: 30px auto;
     border: 1px solid #e4e4e4;
     width: 100px;
@@ -183,10 +192,10 @@ tr:nth-child(odd) {
         width: 100px;
     }
 */
-/*label {
+    /*label {
     margin-right: 15px;
 }*/
 
-.centered {
-    text-align: center;
-}
+    .centered {
+        text-align: center;
+    }
